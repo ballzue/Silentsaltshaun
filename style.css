@@ -1,0 +1,29 @@
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b1020;color:#e9ecff}
+.wrap{max-width:980px;margin:0 auto;padding:24px}
+.top{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+h1{margin:0;font-size:28px;letter-spacing:.5px}
+.sub{margin:0;opacity:.75}
+.box{display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:start}
+@media (max-width:860px){.box{grid-template-columns:1fr}}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:1.2fr .8fr}
+@media (max-width:860px){.card{grid-template-columns:1fr}}
+.imgFrame{position:relative;min-height:360px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25)}
+.imgFrame img{max-width:100%;max-height:520px;display:none}
+.placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;opacity:.8}
+.meta{padding:16px;display:flex;flex-direction:column;gap:14px}
+.nameRow{display:flex;gap:8px;align-items:baseline}
+.label{opacity:.7}
+.value{font-weight:700}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+button{cursor:pointer;border:0;border-radius:12px;padding:10px 14px;font-weight:700;background:#6d7cff;color:#0b1020}
+button:active{transform:translateY(1px)}
+button.ghost{background:transparent;color:#e9ecff;border:1px solid rgba(255,255,255,.18)}
+.howto{border-top:1px solid rgba(255,255,255,.12);padding-top:10px}
+.howto summary{cursor:pointer;font-weight:700}
+.files{margin:8px 0 0 18px}
+.note{opacity:.8;margin:8px 0 0}
+.history{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:14px}
+.history h2{margin:0 0 10px;font-size:16px}
+.history ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.history li{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.08)}
+.foot{margin-top:18px;opacity:.7}

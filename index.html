@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PHING CRK GAMBLING</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>PHING CRK GAMBLING</h1>
+      <p class="sub">Simple loot box (local, offline)</p>
+    </header>
+
+    <section class="box">
+      <div class="card">
+        <div class="imgFrame">
+          <img id="resultImg" alt="Result" />
+          <div id="placeholder" class="placeholder">
+            Add your photos into this folder, then press “Open”.
+          </div>
+        </div>
+
+        <div class="meta">
+          <div class="nameRow">
+            <span class="label">Pulled:</span>
+            <span id="resultName" class="value">—</span>
+          </div>
+
+          <div class="controls">
+            <button id="openBtn">Open Loot Box</button>
+            <button id="resetBtn" class="ghost">Reset</button>
+          </div>
+
+          <details class="howto" open>
+            <summary>How to add the photos</summary>
+            <ol>
+              <li>Put these image files in the <strong>same folder</strong> as this HTML:</li>
+            </ol>
+            <ul class="files">
+              <li>burning_spice.jpg</li>
+              <li>silent_salt.jpg</li>
+              <li>eternal_sugar.jpg</li>
+              <li>mystic_flour.jpg</li>
+              <li>shadow_milk.jpg</li>
+            </ul>
+            <p class="note">If your images are PNG, rename them to <code>.jpg</code> or change the filenames in <code>script.js</code>.</p>
+          </details>
+        </div>
+      </div>
+
+      <aside class="history">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+      </aside>
+    </section>
+
+    <footer class="foot">
+      <small>Made for local use.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
